@@ -36,35 +36,36 @@ Put it into your FiveM server's:
 
 folder.
 
-Your server should now look like:
-
-```text
-resources
-└── PolarsArmoury_WeaponMenu
-    ├── server
-    ├── html
-    ├── client
-    ├── README.md
-    ├── fxmanifest.lua
-    ├── config.lua
-    └── .fxap
-```
-
 ### Step 5 — Add it to server.cfg
 
 Open your server's `server.cfg`.
 
-Add this line:
+Add:
 
 ```text
 ensure PolarsArmoury_WeaponMenu
 ```
 
-### Step 6 — Restart
+### Step 6 — Add permissions
+
+You **need to add your own permission lines** to `server.cfg` so the people you choose can use the weapon menu.
+
+Example:
+
+```text
+add_ace group.admin polarsmenu.admin allow
+add_ace group.admin polarsmenu.open allow
+add_ace group.admin polarsmenu.giveweapon allow
+add_ace group.admin polarsmenu.giveall allow
+add_ace group.admin polarsmenu.giveothers allow
+add_principal identifier.license:YOUR_LICENSE_HERE group.admin
+```
+
+Replace `YOUR_LICENSE_HERE` with your own FiveM license identifier.
+
+### Step 7 — Restart
 
 Save `server.cfg` and restart your FiveM server.
-
-The **PolarsArmoury_WeaponMenu** resource should now start with your server.
 
 ## ⚙️ Configuration
 
@@ -75,8 +76,6 @@ The resource includes:
 Use this file for the available configuration settings.
 
 ## 📁 Resource Structure
-
-The resource contains:
 
 * `server`
 * `html`
@@ -91,10 +90,5 @@ The resource contains:
 * FiveM
 * Qbox
 
-## Permissions
-
-No ACE permission is included by default.
-
-Server owners can add their own permissions if they want to restrict access to the menu.
 
 https://www.youtube.com/@CaptainJacksparrowVR
