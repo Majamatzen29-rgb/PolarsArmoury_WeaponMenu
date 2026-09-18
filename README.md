@@ -6,17 +6,17 @@ A Qbox weapon menu for FiveM servers.
 
 ### Step 1 — Download
 
-Download the **PolarsArmoury_WeaponMenu ZIP** from GitHub.
+Download the **PolarsArmoury_WeaponMenu ZIP**.
 
 ### Step 2 — Open the ZIP
 
-Open the downloaded ZIP file.
+Open the downloaded ZIP.
 
-Inside the ZIP, you will see:
+Inside, you will see:
 
 `PolarsArmoury_WeaponMenu-main`
 
-### Step 3 — Open the folder
+### Step 3 — Open PolarsArmoury_WeaponMenu-main
 
 Open:
 
@@ -24,11 +24,38 @@ Open:
 
 Inside, you will see:
 
+* `PolarsArmoury_WeaponMenu.pack (1).zip`
+* `README.md`
+
+### Step 4 — Open the PolarsArmoury_WeaponMenu ZIP
+
+Open:
+
+`PolarsArmoury_WeaponMenu.pack (1).zip`
+
+Inside the ZIP, you will see:
+
 `PolarsArmoury_WeaponMenu`
 
-### Step 4 — Copy the resource
+### Step 5 — Open PolarsArmoury_WeaponMenu
 
-Take the **PolarsArmoury_WeaponMenu** folder.
+Open:
+
+`PolarsArmoury_WeaponMenu`
+
+Inside, you will find:
+
+* `server`
+* `html`
+* `client`
+* `README.md`
+* `fxmanifest.lua`
+* `config.lua`
+* `.fxap`
+
+### Step 6 — Copy the folder
+
+Copy the **PolarsArmoury_WeaponMenu** folder.
 
 Put it into your FiveM server's:
 
@@ -36,9 +63,9 @@ Put it into your FiveM server's:
 
 folder.
 
-### Step 5 — Add it to server.cfg
+### Step 7 — Add it to server.cfg
 
-Open your server's `server.cfg`.
+Open your `server.cfg`.
 
 Add:
 
@@ -46,7 +73,7 @@ Add:
 ensure PolarsArmoury_WeaponMenu
 ```
 
-### Step 6 — Add permissions
+### Step 8 — Add permissions
 
 You **need to add your own permission lines** to `server.cfg` so the people you choose can use the weapon menu.
 
@@ -63,7 +90,7 @@ add_principal identifier.license:YOUR_LICENSE_HERE group.admin
 
 Replace `YOUR_LICENSE_HERE` with your own FiveM license identifier.
 
-### Step 7 — Restart
+### Step 9 — Restart
 
 Save `server.cfg` and restart your FiveM server.
 
@@ -76,6 +103,8 @@ The resource includes:
 Use this file for the available configuration settings.
 
 ## 📁 Resource Structure
+
+The **PolarsArmoury_WeaponMenu** resource contains:
 
 * `server`
 * `html`
@@ -90,5 +119,6 @@ Use this file for the available configuration settings.
 * FiveM
 * Qbox
 
+* Qbox
 
 https://www.youtube.com/@CaptainJacksparrowVR
